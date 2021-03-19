@@ -15,7 +15,7 @@ Este wrapper foi desenvolvido utilizando PyCharm e a SDK Python 3.9.2
 
 > Obs: Aceito dicas na identificação dos requisitos e como preencher melhor esta seção
 
-**Pacotes:**
+**Pacotes a importar:**
  - idna
  - urllib3
  - chardet
@@ -25,10 +25,10 @@ Este wrapper foi desenvolvido utilizando PyCharm e a SDK Python 3.9.2
 # Como usar
 Todos os métodos atualmente estão contidos dentro de uma única classe **Banker**, a ser instanciada e cujo objeto será o núcleo de todas as consultas seguintes.
 
-Parâmetros:
---- **email** da conta Organizze
---- **chave de API** gerada em https://app.organizze.com.br/configuracoes/api-keys
---- **autor** (*opcional*) - é enviado junto com o email de login para formar o User-Agent da conexão remota, que a Organizze pede num formato específico para **facilitar** sua identificação (*impedir é impossível já que a identificação do usuário já é realizada pelos email/chave da API*)
+**Parâmetros para instanciação:**
+> * **email** (str) da conta Organizze
+> * **chave de API** (str) gerada em https://app.organizze.com.br/configuracoes/api-keys
+> * **autor** (str) (*opcional*) - é enviado junto com o email de login para formar o User-Agent da conexão remota, que a Organizze pede num formato específico para **facilitar** sua identificação (*impedir é impossível já que a identificação do usuário já é realizada pelos email/chave da API*)
 
 **Exemplo:**
 
@@ -39,6 +39,7 @@ Parâmetros:
     autor = "Anderson"
     
     conn = Banker(email, chave_api, autor)
+
 após isso, basta invocar os métodos programados diretamente do objeto de conexão
 
     contas = conn.getContas()
