@@ -10,6 +10,12 @@ Aceito sugestões de melhoria, mas peço que o objetivo de cada alteração seja
 
 Este wrapper foi desenvolvido utilizando PyCharm e a SDK Python 3.9.2
 
+# Bugs conhecidos
+**IMPORTANTE**: Foi informado pelo equipe do Organizze que a API deles não está sendo ativamente atualizada com frequencia, portanto problemas no funcionamento podem ocorrer, e a utilização da API e deste wrapper é de inteira responsabilidade do usuário.
+
+Abaixo mapearei os bugs que for encontrando. Sintam-se à vontade de enviar outros:
+* atributo "paid" (Pago) de um lançamento não é atualizado após comando de atualização
+
 # Requisitos e Instalação
 *Em elaboração*
 
